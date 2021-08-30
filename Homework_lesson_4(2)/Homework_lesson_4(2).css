@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+.figure {
+    border: 1px solid turquoise;
+    background: turquoise;
+    width: 400px;
+    height: 400px;   
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    position: relative;
+    animation: square 10s 3;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 300px;
+        background: chocolate;
+        border-radius: 50%;
+    }
+    50% {
+        top: 300px;
+        left: 300px;
+        border-radius: 0;
+        background: olivedrab;
+    }
+    75% {
+        top: 300px;
+        left: 0px;
+        border-radius: 50%;
+        background: red;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
